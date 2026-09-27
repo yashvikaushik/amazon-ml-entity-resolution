@@ -1,0 +1,10 @@
+==================================================
+V1 CANDIDATE-MISS SUMMARY REPORT
+==================================================
+total ground-truth matches: 7,638,365
+total V1 candidate pairs: 246,533,496
+total V1 missed true matches: 1,473,225
+V1 candidate recall: 80.7128%
+missed S2 matches: 718,991
+missed S3 matches: 754,234
+missed-match percentage: 19.2872%

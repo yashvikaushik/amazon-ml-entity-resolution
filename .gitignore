@@ -1,0 +1,38 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset — do NOT upload
+student_resource/dataset/
+dataset/
+
+# Large candidate files — do NOT upload
+candidate_pairs.tsv
+candidate_pairs_flat.tsv
+candidate_pairs_flat_FULL.tsv
+candidate_pairs_flat_FULL.tsv.zip
+*candidate*.tsv
+*candidate*.zip
+
+# Generated miss-analysis data
+v2_missed_matches.tsv
+v2_missed_sample.tsv
+
+# Environment/secrets
+.env
+*.env
+
+# OS files
+.DS_Store
+
+# Logs
+*.log
+*.tmp

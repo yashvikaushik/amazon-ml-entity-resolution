@@ -1,0 +1,370 @@
+================================================================================
+V1 CANDIDATE-MISS FAILURE PATTERN ANALYSIS (1,000 SAMPLE)
+================================================================================
+
+SUMMARY OF 12 PRACTICAL FAILURE CATEGORIES:
+--------------------------------------------------------------------------------
+
+Category 1: Name typo / spelling variation
+  Count: 767 / 1000 (76.7%)
+  Representative Examples (5):
+    Example 1 [S1-925783039 <-> S3-698172821 (S3)]:
+      S1 Name:     Orelee's Barbershop
+      Missed Name: Orelee'S Services
+      S1 Address:  1795 Westchester Drive, High Point, NC
+      Missed Addr: Westchester Dr, High Point, North Carolina
+    Example 2 [S1-133037285 <-> S3-33144658 (S3)]:
+      S1 Name:     Christ Chapel
+      Missed Name: Christ Center
+      S1 Address:  2100 Cameron Drive, Unit APARTMENT G, Dundalk, MD
+      Missed Addr: 210 Cameron Dr, # Apartment G, Dundalk, Maryland
+    Example 3 [S1-755362802 <-> S2-587230276 (S2)]:
+      S1 Name:     Prabhav Business Center
+      Missed Name: Prabhav Center Center
+      S1 Address:  797, Lake Town Block A, Kolkata, Howrah, West Bengal
+      Missed Addr: HN 567 797, LAKE TOWN BLOCK A, KOLKATA, NULL, West Bengal
+    Example 4 [S1-755362802 <-> S3-440254853 (S3)]:
+      S1 Name:     Prabhav Business Center
+      Missed Name: Mr Prabhav Business Services
+      S1 Address:  797, Lake Town Block A, Kolkata, Howrah, West Bengal
+      Missed Addr: Plot 334 797, Lake Town Block A, Kolkata, Howrah, পশ্চিমবঙ্গ
+    Example 5 [S1-851869949 <-> S2-961342067 (S2)]:
+      S1 Name:     Custom Wealth Services LLC
+      Missed Name: Custom Wealth
+      S1 Address:  OH, Columbus, 5559 Orville Avenue
+      Missed Addr: 555 ORVILLE AVENUE, PO BOX 3877, COLUMBUS, OH
+
+Category 2: Name token variation / word reorder
+  Count: 616 / 1000 (61.6%)
+  Representative Examples (5):
+    Example 1 [S1-925783039 <-> S3-698172821 (S3)]:
+      S1 Name:     Orelee's Barbershop
+      Missed Name: Orelee'S Services
+      S1 Address:  1795 Westchester Drive, High Point, NC
+      Missed Addr: Westchester Dr, High Point, North Carolina
+    Example 2 [S1-133037285 <-> S3-33144658 (S3)]:
+      S1 Name:     Christ Chapel
+      Missed Name: Christ Center
+      S1 Address:  2100 Cameron Drive, Unit APARTMENT G, Dundalk, MD
+      Missed Addr: 210 Cameron Dr, # Apartment G, Dundalk, Maryland
+    Example 3 [S1-755362802 <-> S2-587230276 (S2)]:
+      S1 Name:     Prabhav Business Center
+      Missed Name: Prabhav Center Center
+      S1 Address:  797, Lake Town Block A, Kolkata, Howrah, West Bengal
+      Missed Addr: HN 567 797, LAKE TOWN BLOCK A, KOLKATA, NULL, West Bengal
+    Example 4 [S1-755362802 <-> S3-440254853 (S3)]:
+      S1 Name:     Prabhav Business Center
+      Missed Name: Mr Prabhav Business Services
+      S1 Address:  797, Lake Town Block A, Kolkata, Howrah, West Bengal
+      Missed Addr: Plot 334 797, Lake Town Block A, Kolkata, Howrah, পশ্চিমবঙ্গ
+    Example 5 [S1-851869949 <-> S3-949828938 (S3)]:
+      S1 Name:     Custom Wealth Services LLC
+      Missed Name: Custom Services LLC Services
+      S1 Address:  OH, Columbus, 5559 Orville Avenue
+      Missed Addr: 005559 Orville Ave, Columus CDP, Ohio
+
+Category 3: Legal suffix / prefix variation
+  Count: 446 / 1000 (44.6%)
+  Representative Examples (5):
+    Example 1 [S1-925783039 <-> S3-698172821 (S3)]:
+      S1 Name:     Orelee's Barbershop
+      Missed Name: Orelee'S Services
+      S1 Address:  1795 Westchester Drive, High Point, NC
+      Missed Addr: Westchester Dr, High Point, North Carolina
+    Example 2 [S1-755362802 <-> S3-440254853 (S3)]:
+      S1 Name:     Prabhav Business Center
+      Missed Name: Mr Prabhav Business Services
+      S1 Address:  797, Lake Town Block A, Kolkata, Howrah, West Bengal
+      Missed Addr: Plot 334 797, Lake Town Block A, Kolkata, Howrah, পশ্চিমবঙ্গ
+    Example 3 [S1-851869949 <-> S2-961342067 (S2)]:
+      S1 Name:     Custom Wealth Services LLC
+      Missed Name: Custom Wealth
+      S1 Address:  OH, Columbus, 5559 Orville Avenue
+      Missed Addr: 555 ORVILLE AVENUE, PO BOX 3877, COLUMBUS, OH
+    Example 4 [S1-851869949 <-> S2-915265864 (S2)]:
+      S1 Name:     Custom Wealth Services LLC
+      Missed Name: Custom Wealth LLC Partners
+      S1 Address:  OH, Columbus, 5559 Orville Avenue
+      Missed Addr: 555 ORVILLE AVENUE, PO BOX 3877, COLUMBUS, OH
+    Example 5 [S1-629417405 <-> S3-606982601 (S3)]:
+      S1 Name:     Moore Bitwise Inc
+      Missed Name: Moore Inc Services
+      S1 Address:  337 Oakland Avenue, Michigan City, IN
+      Missed Addr: 0337 Oakland Ave, Michigan City, Indiana
+
+Category 4: Completely different business names
+  Count: 24 / 1000 (2.4%)
+  Representative Examples (5):
+    Example 1 [S1-993527714 <-> S3-250788566 (S3)]:
+      S1 Name:     George Saul Inc
+      Missed Name: Úmbrayuma
+      S1 Address:  Unit UNIT 367, 1400 Great Wolf Drive, WI, Village Of Lake Delton
+      Missed Addr: 1400 Great Wolf Dr, Unit UNIT 367, Village Of Lake Delton, Wisconsin
+    Example 2 [S1-134898809 <-> S2-156312637 (S2)]:
+      S1 Name:     Corner Hypnosis
+      Missed Name: Brixlyra
+      S1 Address:  26 Stone Street, Unit 3, Beverly, MA
+      Missed Addr: PMB 9599, MA, BEVERLY, 0026 STONE ST
+    Example 3 [S1-535605149 <-> S3-426905497 (S3)]:
+      S1 Name:     Supreme Engineering LLP
+      Missed Name: Bríxcira
+      S1 Address:  Shop-04, Gut-41/2, Plot-3/A, 3/B, Pratham Park, Panvel, Raigarh(Mh), Maharashtra
+      Missed Addr: MH, Gut-41/2, Plot-3/a, 3/B, Pratham Park, null, Shop-04, Panvel
+    Example 4 [S1-756304715 <-> S3-919158992 (S3)]:
+      S1 Name:     Choice Rate
+      Missed Name: Wexdova
+      S1 Address:  2333 Sierra Madre Court, Rancho Cordova, CA
+      Missed Addr: 233 Sierra Madre Ct, PMB 1086, Rancho Cordova CITY, California
+    Example 5 [S1-306095185 <-> S3-405262257 (S3)]:
+      S1 Name:     Leo International School
+      Missed Name: Tavosyn
+      S1 Address:  Mumbai, Maharashtra, Mumbai City, Al-Safa Chs, Millat Nagar, Andheri (West), 104/A-1
+      Missed Addr: 104/A-1, Al-Safa Chs, Millat Nagar, Andheri (West), Mumbai, Mumbai City, Maharashtra
+
+Category 5: Missing S2/S3 address
+  Count: 84 / 1000 (8.4%)
+  Representative Examples (5):
+    Example 1 [S1-504790211 <-> S2-340882825 (S2)]:
+      S1 Name:     Crystal Lending PC
+      Missed Name: Crystal PC Lending
+      S1 Address:  11643 Prosperity Road, South Jordan, UT
+      Missed Addr: 
+    Example 2 [S1-765734254 <-> S3-799567902 (S3)]:
+      S1 Name:     Health Fellowship Partners
+      Missed Name: Health Fellowship Partners Federation
+      S1 Address:  601 Oleander Circle, Virginia Beach City, VA
+      Missed Addr: 
+    Example 3 [S1-17666546 <-> S2-341313901 (S2)]:
+      S1 Name:     Pacific Learning Laboratories LLC
+      Missed Name: Pacific Learning Laboratories L.L.C.
+      S1 Address:  4810 Nassau Avenue, Sand Springs, OK
+      Missed Addr: 
+    Example 4 [S1-279914306 <-> S2-747970909 (S2)]:
+      S1 Name:     Jobst Royal Metal Works LLC
+      Missed Name: JOBST ROYAL LLC WORKS  METAL
+      S1 Address:  Grayson, 115 Paradise Hill, KY
+      Missed Addr: 
+    Example 5 [S1-800482427 <-> S3-355590735 (S3)]:
+      S1 Name:     B+ Biotechnologies LLC
+      Missed Name: B+ LLC Services
+      S1 Address:  328 Buckingham Street, Unit 414, Columbus, OH
+      Missed Addr: 
+
+Category 6: Address typo / spelling variation
+  Count: 155 / 1000 (15.5%)
+  Representative Examples (5):
+    Example 1 [S1-773889195 <-> S2-970528089 (S2)]:
+      S1 Name:     Prime Money
+      Missed Name: @primemoney
+      S1 Address:  17560 Ellis Road, Tahlequah, OK
+      Missed Addr: TAHLEQUAH, OK, 0017560 ELLIS ROAD
+    Example 2 [S1-851869949 <-> S3-949828938 (S3)]:
+      S1 Name:     Custom Wealth Services LLC
+      Missed Name: Custom Services LLC Services
+      S1 Address:  OH, Columbus, 5559 Orville Avenue
+      Missed Addr: 005559 Orville Ave, Columus CDP, Ohio
+    Example 3 [S1-22305073 <-> S2-578011604 (S2)]:
+      S1 Name:     Dermatology Green Medicine
+      Missed Name: Dermatology Green
+      S1 Address:  294 Meadowcreek Drive, Unit Unit 2, Village Of Pewaukee, WI
+      Missed Addr: 294 MADOWCREEK DR, PEWAUKEE, WI
+    Example 4 [S1-883973644 <-> S2-346262429 (S2)]:
+      S1 Name:     Global Hovnanian LLC
+      Missed Name: GLOBAL HOGNANINN LLC
+      S1 Address:  4024 39th Avenue, Seattle, WA
+      Missed Addr: 4024B 39RD AVE, SEATTLE, WA
+    Example 5 [S1-796227187 <-> S3-941018876 (S3)]:
+      S1 Name:     Foot & Ankle Allied Center LLC
+      Missed Name: Foot & Ankle Allied Center LLC Council
+      S1 Address:  1216 Preston Avenue, Charlottesville City, VA
+      Missed Addr: 216 Preston Avenue, Charlottesville ICTY, Virginia
+
+Category 7: Address abbreviation variation
+  Count: 553 / 1000 (55.3%)
+  Representative Examples (5):
+    Example 1 [S1-925783039 <-> S3-698172821 (S3)]:
+      S1 Name:     Orelee's Barbershop
+      Missed Name: Orelee'S Services
+      S1 Address:  1795 Westchester Drive, High Point, NC
+      Missed Addr: Westchester Dr, High Point, North Carolina
+    Example 2 [S1-133037285 <-> S3-33144658 (S3)]:
+      S1 Name:     Christ Chapel
+      Missed Name: Christ Center
+      S1 Address:  2100 Cameron Drive, Unit APARTMENT G, Dundalk, MD
+      Missed Addr: 210 Cameron Dr, # Apartment G, Dundalk, Maryland
+    Example 3 [S1-851869949 <-> S2-961342067 (S2)]:
+      S1 Name:     Custom Wealth Services LLC
+      Missed Name: Custom Wealth
+      S1 Address:  OH, Columbus, 5559 Orville Avenue
+      Missed Addr: 555 ORVILLE AVENUE, PO BOX 3877, COLUMBUS, OH
+    Example 4 [S1-851869949 <-> S3-949828938 (S3)]:
+      S1 Name:     Custom Wealth Services LLC
+      Missed Name: Custom Services LLC Services
+      S1 Address:  OH, Columbus, 5559 Orville Avenue
+      Missed Addr: 005559 Orville Ave, Columus CDP, Ohio
+    Example 5 [S1-851869949 <-> S2-915265864 (S2)]:
+      S1 Name:     Custom Wealth Services LLC
+      Missed Name: Custom Wealth LLC Partners
+      S1 Address:  OH, Columbus, 5559 Orville Avenue
+      Missed Addr: 555 ORVILLE AVENUE, PO BOX 3877, COLUMBUS, OH
+
+Category 8: House number mismatch/missing
+  Count: 658 / 1000 (65.8%)
+  Representative Examples (5):
+    Example 1 [S1-925783039 <-> S3-698172821 (S3)]:
+      S1 Name:     Orelee's Barbershop
+      Missed Name: Orelee'S Services
+      S1 Address:  1795 Westchester Drive, High Point, NC
+      Missed Addr: Westchester Dr, High Point, North Carolina
+    Example 2 [S1-773889195 <-> S2-970528089 (S2)]:
+      S1 Name:     Prime Money
+      Missed Name: @primemoney
+      S1 Address:  17560 Ellis Road, Tahlequah, OK
+      Missed Addr: TAHLEQUAH, OK, 0017560 ELLIS ROAD
+    Example 3 [S1-133037285 <-> S3-33144658 (S3)]:
+      S1 Name:     Christ Chapel
+      Missed Name: Christ Center
+      S1 Address:  2100 Cameron Drive, Unit APARTMENT G, Dundalk, MD
+      Missed Addr: 210 Cameron Dr, # Apartment G, Dundalk, Maryland
+    Example 4 [S1-755362802 <-> S2-587230276 (S2)]:
+      S1 Name:     Prabhav Business Center
+      Missed Name: Prabhav Center Center
+      S1 Address:  797, Lake Town Block A, Kolkata, Howrah, West Bengal
+      Missed Addr: HN 567 797, LAKE TOWN BLOCK A, KOLKATA, NULL, West Bengal
+    Example 5 [S1-755362802 <-> S3-440254853 (S3)]:
+      S1 Name:     Prabhav Business Center
+      Missed Name: Mr Prabhav Business Services
+      S1 Address:  797, Lake Town Block A, Kolkata, Howrah, West Bengal
+      Missed Addr: Plot 334 797, Lake Town Block A, Kolkata, Howrah, পশ্চিমবঙ্গ
+
+Category 9: City/locality variation
+  Count: 662 / 1000 (66.2%)
+  Representative Examples (5):
+    Example 1 [S1-773889195 <-> S2-970528089 (S2)]:
+      S1 Name:     Prime Money
+      Missed Name: @primemoney
+      S1 Address:  17560 Ellis Road, Tahlequah, OK
+      Missed Addr: TAHLEQUAH, OK, 0017560 ELLIS ROAD
+    Example 2 [S1-755362802 <-> S2-587230276 (S2)]:
+      S1 Name:     Prabhav Business Center
+      Missed Name: Prabhav Center Center
+      S1 Address:  797, Lake Town Block A, Kolkata, Howrah, West Bengal
+      Missed Addr: HN 567 797, LAKE TOWN BLOCK A, KOLKATA, NULL, West Bengal
+    Example 3 [S1-851869949 <-> S3-949828938 (S3)]:
+      S1 Name:     Custom Wealth Services LLC
+      Missed Name: Custom Services LLC Services
+      S1 Address:  OH, Columbus, 5559 Orville Avenue
+      Missed Addr: 005559 Orville Ave, Columus CDP, Ohio
+    Example 4 [S1-22305073 <-> S2-578011604 (S2)]:
+      S1 Name:     Dermatology Green Medicine
+      Missed Name: Dermatology Green
+      S1 Address:  294 Meadowcreek Drive, Unit Unit 2, Village Of Pewaukee, WI
+      Missed Addr: 294 MADOWCREEK DR, PEWAUKEE, WI
+    Example 5 [S1-504790211 <-> S2-340882825 (S2)]:
+      S1 Name:     Crystal Lending PC
+      Missed Name: Crystal PC Lending
+      S1 Address:  11643 Prosperity Road, South Jordan, UT
+      Missed Addr: 
+
+Category 10: Transliteration / script variation
+  Count: 238 / 1000 (23.8%)
+  Representative Examples (5):
+    Example 1 [S1-755362802 <-> S3-440254853 (S3)]:
+      S1 Name:     Prabhav Business Center
+      Missed Name: Mr Prabhav Business Services
+      S1 Address:  797, Lake Town Block A, Kolkata, Howrah, West Bengal
+      Missed Addr: Plot 334 797, Lake Town Block A, Kolkata, Howrah, পশ্চিমবঙ্গ
+    Example 2 [S1-597762257 <-> S3-426660831 (S3)]:
+      S1 Name:     Green Logistics Private Limited
+      Missed Name: ग्रीन लॉजिस्टिक्स प्राइवेट लिमिटेड
+      S1 Address:  E-7, Second Floor, New Delhi, South Delhi, Delhi
+      Missed Addr: South Delhi, No. 225 E-7, DL, New Delhi
+    Example 3 [S1-993527714 <-> S3-250788566 (S3)]:
+      S1 Name:     George Saul Inc
+      Missed Name: Úmbrayuma
+      S1 Address:  Unit UNIT 367, 1400 Great Wolf Drive, WI, Village Of Lake Delton
+      Missed Addr: 1400 Great Wolf Dr, Unit UNIT 367, Village Of Lake Delton, Wisconsin
+    Example 4 [S1-681392030 <-> S3-476447318 (S3)]:
+      S1 Name:     Care Institute of Technology
+      Missed Name: Care Institute of
+      S1 Address:  West Bengal, Howrah, 229, Kolkata, Netaji Subhas Chandra Bose Road Vishnu Enclave, 3Rd Floor, Flat No.- 3A, Kolkata
+      Missed Addr: Netaji Subhas Chandra Bose Road Vishnu Enclave, 3Rd Floor, Flat No.- 3A, Kolkata, Kolkata, 229., Kolkata, পশ্চিমবঙ্গ
+    Example 5 [S1-666876590 <-> S2-185860935 (S2)]:
+      S1 Name:     Ss Systems Limited
+      Missed Name: एसएस सिस्टम्स लिमिटेड
+      S1 Address:  A-1, Malad (West), Mumbai, Maharashtra, 401, Rahul Apartment, Marve Road
+      Missed Addr: A-3, 401, RAHUL APARTMENT, MARVE ROAD, MUMBAI, Maharashtra
+
+Category 11: Domain / website-like business name
+  Count: 108 / 1000 (10.8%)
+  Representative Examples (5):
+    Example 1 [S1-773889195 <-> S2-970528089 (S2)]:
+      S1 Name:     Prime Money
+      Missed Name: @primemoney
+      S1 Address:  17560 Ellis Road, Tahlequah, OK
+      Missed Addr: TAHLEQUAH, OK, 0017560 ELLIS ROAD
+    Example 2 [S1-629417405 <-> S3-438606634 (S3)]:
+      S1 Name:     Moore Bitwise Inc
+      Missed Name: moorebitwise.com
+      S1 Address:  337 Oakland Avenue, Michigan City, IN
+      Missed Addr: 0337 Oakland Avenue, Michigan City, Indiana
+    Example 3 [S1-865131206 <-> S3-219374335 (S3)]:
+      S1 Name:     Helios
+      Missed Name: Helios.Com
+      S1 Address:  66 Edgewood Street, Bridgeport, CT
+      Missed Addr: Bridgeport, 66 Edgewood Saint, Connecticut
+    Example 4 [S1-252242682 <-> S2-84842746 (S2)]:
+      S1 Name:     Aggie E. Nagle, L.C.S.W.
+      Missed Name: *** aggieenagle.com
+      S1 Address:  11900 54th Avenue, Plymouth, MN
+      Missed Addr: 54ND AVENUE, MINNEAPLIS, MN
+    Example 5 [S1-602913883 <-> S2-837366545 (S2)]:
+      S1 Name:     Cascade Allied Telecom LLC
+      Missed Name: catelecom.com
+      S1 Address:  165 Linden Street, Unit 106, Wellesley, MA
+      Missed Addr: 65 LINDEN STREET, WELLESLEY, MA
+
+Category 12: Other
+  Count: 0 / 1000 (0.0%)
+  Representative Examples (5):
+
+
+================================================================================
+CROSS-FEATURE RETRIEVAL SIGNAL STATISTICS (1,000 SAMPLE):
+================================================================================
+1. Same house number (normalized leading digits):             598 / 1000 ( 59.8%)
+2. Shared distinctive address token (length >= 4):            909 / 1000 ( 90.9%)
+3. Meaningful name-token overlap (excluding legal/noise):     712 / 1000 ( 71.2%)
+4. Strong address similarity despite weak/different names:    223 / 1000 ( 22.3%)
+5. Strong name similarity despite weak/missing addresses:     135 / 1000 ( 13.5%)
+
+
+================================================================================
+TOP 3 V2 FAILURE PATTERNS
+================================================================================
+1. NAME TYPOS & TOKEN REORDER / VARIATION (73.6% - 61.6% of misses):
+   - Cause: V1 relies primarily on exact normalized core name equality (`normalize_name_core`), which collapses if there are character edits, token insertions/deletions (e.g. 'Orelee\'s Barbershop' vs 'Orelee\'s Services'), or multi-word permutations.
+   - Impact: Misses legitimate matches when business names have slight variations or extra descriptors not caught by standard legal stopword removal.
+
+2. CITY & LOCALITY VARIATIONS / MISMATCHES (66.2% of misses):
+   - Cause: V1 City+House blocking assumes the city string extracted by split-comma indexing exactly matches across sources. In reality, sources frequently format locality differently (e.g., 'Columus CDP' vs 'Columbus', 'Howrah' vs 'Kolkata', or missing city tokens).
+   - Impact: Blocks on City+House fail because the city key never intersects even when the house number and street are identical.
+
+3. HOUSE NUMBER FORMATTING & STREET PREFIX MISMATCHES (65.8% of misses):
+   - Cause: V1 House+Street requires exact matching on the initial house number token and full street token. Sources exhibit zero-padding ('0017560' vs '17560'), prefix numbers ('HN 567 797' vs '797'), missing house numbers in secondary sources ('Westchester Dr' vs '1795 Westchester Drive'), and street abbreviation variations.
+   - Impact: Exact composite key `house_number:street` fails when one source truncates, prepends, or formats the house number differently.
+
+================================================================================
+RECOMMENDED RETRIEVAL SIGNAL TO TEST FIRST
+================================================================================
+RECOMMENDATION: DISTINCTIVE ADDRESS TOKEN INDEXING & PREFIX-AWARE HOUSE BLOCKING
+
+Primary Signal to Test First:
+1. Distinctive Address Token Inverted Index (Street / Locality token overlap):
+   - Finding: 90.9% of all missed pairs share at least one distinctive address token (length >= 4).
+   - Strategy: Build an inverted index on normalized, distinctive address tokens (with appropriate frequency limits/caps <= 100 or 200 per source, or combined with country partitioning) to capture records where business names are noisy or house numbers are formatted inconsistently.
+
+Secondary Signal (High Precision Complement):
+2. Normalized House Number + Street Prefix (Street 4-prefix with zero-stripped house number):
+   - Finding: 59.8% of missed pairs share the exact normalized house number, but failed V1 due to leading zeros ('0017560' vs '17560') or street token variations.
+   - Strategy: Strip leading zeros and use a 3-4 character street prefix key (e.g. '17560:elli') with block size <= 200-500.
